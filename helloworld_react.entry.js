@@ -57,10 +57,10 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_reactDom2.default.render(_react2.default.createElement(
-	       'h3',
-	       null,
-	       'Example2'
-	), document.getElementById('example2'));
+	         'h3',
+	         null,
+	         'Hello world!'
+	), document.getElementById('examplesec'));
 
 /***/ },
 /* 1 */

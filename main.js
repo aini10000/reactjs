@@ -73,7 +73,7 @@ import App from './app.jsx';
       );*/
 
 
-      var WebSite=React.createClass({
+    /*  var WebSite=React.createClass({
          render:function(){
            return(<div>
            <Name name={this.props.name}/>
@@ -105,4 +105,29 @@ import App from './app.jsx';
       ReactDOM.render(
       <WebSite name="fdb" site="http://www.runoob.com"/>,
       document.getElementById('example3')
-      );
+      );*/
+
+
+
+
+      var LikeButton=React.createClass({
+          getInitialState:function(){
+            return {liked:false};
+          },
+          handleClick:function(){
+            this.setState({liked:!this.state.liked});
+          },
+          render:function(){
+            var text=this.state.liked?'喜欢':'不喜欢';
+            return (
+              <p onClick={this.handleClick}>
+               你<b>{text}</b>我。点我切换状态。
+              </p>
+              );
+          }
+      })
+
+      ReactDOM.render(
+        <LikeButton/>,
+        document.getElementById('example3')
+        )
