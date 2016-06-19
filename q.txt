@@ -1,0 +1,7 @@
+  //渲染react组件
+   var mycomponent=React.createClass({});
+      var myelement=<mycomponent someProperty{true}/>;
+      ReactDOM.render(myelement,document.getElementById('example3'));
+
+      class->className
+      for->htmlFor
