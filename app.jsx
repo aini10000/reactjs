@@ -6,8 +6,8 @@ class App extends React.Component{
     return(
      <div>Hello World!!!<br/>欢迎来到学习！</div>
     	);
-	}
-
+	       }
+ 
 }
 
 export default App;
